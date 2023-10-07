@@ -1,0 +1,470 @@
+/* import font family here */
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Noto+Serif+Bengali:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rum+Raisin&family=Sora:wght@100;200;300;400;500;600;700;800&family=Syne+Mono&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style: none;
+}
+h1{
+    color: #1f2999!important;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header section css code start from here */
+header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.headerBg{
+    background: #fff;
+    color:#1f2999!important;
+    box-shadow: 0 3px 45px rgba(0,0,0,0.15);
+}
+.headerWrp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerWrp>div>h1{
+    color: #fff!important;
+}
+.nav>ul{
+display: flex;
+align-items: center;
+gap: 20px;
+justify-content: center;
+}
+.nav>ul>li>a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.headerIcons{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+}
+.headeIcon{
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* header section css code end from here */
+
+
+/* hero section css code start from here */
+.heorSectionFrist{
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 82%, 74% 72%, 50% 84%, 20% 81%, 0 99%);
+    background:#4a57e7;
+}
+
+.heroSection{
+    height: 100vh;
+    background:url("../img/hero.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 80%, 74% 70%, 50% 82%, 20% 79%, 0 97%);
+    padding-top: 70px;
+    animation: shrink 6s infinite;
+}
+
+/* hero background zooming animation */
+@keyframes shrink {
+    0% {
+      background-size: 100% 100%;
+      /* it will be clear out */
+      background-size: cover; 
+    }
+    100% {
+      background-size: 110% 110%;
+      /* it will be clear out */
+      background-size: cover; 
+    }
+  }
+
+.heroWrp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    color: #fff;
+    margin-top: 50px    ;
+}
+.heroWrp>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff!important;
+    text-transform: capitalize;
+}
+.mouse{
+    height: 45px;
+    width: 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 8px;
+    /* animation: mouseWheel 1.5s ease infinite; */
+}
+.mouse>div{
+    width: 6px;
+    height:9px;
+    border-radius: 50%;
+    background: #fff;
+    
+}
+/* mouse wheel animation */
+@keyframes mouseWheel {
+    0%{
+        padding-top: 8px;
+    }
+    100%{
+        padding-top: 16px;
+    }
+}
+/* hero section css code end from here */
+
+
+
+/* about section css code start from here */
+.aboutsection{
+    margin-top: -40px;
+}
+.aboutwrp{
+    display: flex;
+    justify-content:space-around;
+    gap: 30px;
+}
+.aboutwrp>div{
+    width: 100%;
+}
+.aboutwrp>div>h1{
+    font-size: 40px;
+    font-weight:600;
+    line-height: 47px;
+    padding-bottom: 24px;
+}
+.aboutwrp>div>p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+}
+.aboutImg{
+    width: 100%;
+    margin: auto!important;
+    height: 430px;
+}
+
+/* about section css code end from here */
+
+
+/* second about section css code start from here */
+.aboutsection2{
+    margin-top: -40px;
+    background: #f3f0f0;
+    margin-top: 37px;
+    padding:60px 0px;
+}
+.aboutwrp2{
+    display: flex;
+    justify-content:space-around;
+    gap: 30px;
+}
+.aboutwrp2>div{
+    width: 100%;
+}
+.aboutwrp2>div>h1{
+    font-size: 40px;
+    font-weight:600;
+    line-height: 47px;
+    padding-bottom: 24px;
+}
+.aboutwrp2>div>p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+}
+/* second about section css code start from here */
+
+
+/* vedio section css code start from here */
+.vedioSection{
+    height:auto;
+    width: 100%!important;
+    position: relative;
+}
+
+.vedio{
+    width: 100%;
+    height:auto;
+}
+.vedioSrc{
+    width: 100%!important;
+    height: auto;
+}
+
+.vediotextWrp{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.vediotextWrp>div{
+    width: 75%;
+    margin: auto;
+}
+.vediotextWrp>div>h1{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.vediotextWrp>div>ul{
+    font-size: 20px;
+    font-weight: 500;
+}
+.vediotextWrp>div>ul>li{
+    display: flex;
+    gap:15px;
+    align-items: center;
+    padding: 7px 0;
+}
+.vediotextWrp>div>ul>li>i{
+    color: #1f2999!important;
+    font-size: 20px!important;
+}
+.vediotextWrp>div>ul>li>span{
+    font-size: 20px;
+    color: #fff;
+}
+
+/* vedio section css code end from here */
+
+
+
+
+/* services section css code start from here */
+.servicesWrp>h1{
+text-align: center;
+font-size: 40px;
+font-weight: 600;
+padding-top: 25px;
+line-height: 45px;
+padding-top: 50px;
+}
+.servicesWrp>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 25px;
+    color: rgb(67, 67, 67);
+}
+    
+.servicesIconsWrp{
+    margin-top: 70px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.servicesIconsWrp>div{
+    width: 100%;
+    height: 140px;
+}
+.serIcons{
+    font-size: 45px;
+    color: #767ed1;
+}
+.servicesIconsTitle{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+/* services section css code end from here */
+
+
+
+
+
+
+
+
+
+
+/* referrantise section css code start from here */
+.referrantise{
+    background: #f3f0f0;
+}
+.referrantiseHeader{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    padding: 35px 0px;
+}
+.referrantiseWrp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+.referrantiseWrp>div{
+    width: 100%;
+    height: 300px;
+}
+.referantiseImage{
+    width: 100%;
+    height: 100%;
+}
+.referrantiseBtnWrp{
+    display: flex;
+    justify-content: center;
+}
+.referrantiseBtn{
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1f2999;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin-bottom: 50px;
+}
+/* referrantise section css code end from here */
+
+/* referrantise section css code start from here */
+.referrantisehead{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    padding: 35px 0px;
+}
+.referrantiseWrper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    gap: 10px;
+    margin-top: 30px;
+}
+.referrantiseWrper>div{
+    height: 100%;
+    width: 100%;
+
+}
+.brandIcon{
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+/* referrantise section css code end from here */
+
+
+
+
+
+
+
+/* footer section css code start from here */
+.footersectionfrist{
+    height: 80vh;
+    transform: rotate(180deg);
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 82%, 74% 72%, 50% 84%, 20% 81%, 0 99%);
+    background: #4a57e7;
+}
+
+.footersection{
+    height: 80vh;
+    background:#1f2999;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 80%, 74% 70%, 50% 82%, 20% 79%, 0 97%);
+    padding-top: 70px;
+    animation: shrink 6s infinite;   
+}
+
+.footerWrp{
+    transform: rotate(180deg);
+    color: #ffff;
+    height: 330px;
+    text-align: center;
+}
+
+.footerWrp>h1{
+    font-size: 40px;
+    color: #fff!important;
+    font-weight: 600;
+}
+.footerWrp>p{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.footerWrp>div{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.footerWrp>div>button{
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.copyright{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(136, 136, 241);
+}
+.dev{
+    color: rgb(192, 192, 246);
+}
+/* footer section css code end from here */
+
